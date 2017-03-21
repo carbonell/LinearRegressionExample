@@ -34,12 +34,13 @@ plt.show()
 # Printing theta values
 print("theta values are {t}".format(t=theta))
 # Predicting price for 3 cars whose power is 190, 250, 310
-case1 = np.matrix([1, 190])
+case1 = np.matrix([190, 1])
 prediction1 = np.asscalar(((theta.T.dot(case1.T)) * 1000))
-case2 = np.matrix([1, 250])
+case2 = np.matrix([250, 1])
 prediction2 = np.asscalar(((theta.T.dot(case2.T)) * 1000))
-case3 = np.matrix([1, 310])
+case3 = np.matrix([310, 1])
 prediction3 = np.asscalar(((theta.T.dot(case3.T)) * 1000))
+
 
 predictionMessage = '''For a car that costs 190, 250 or 310 its minimum
 price is predicted to be {pr1}, {pr2} and {pr3}, respectively''' 
